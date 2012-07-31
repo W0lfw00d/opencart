@@ -76,6 +76,13 @@ class ControllerCommonColumnRight extends Controller {
 			}
 		}
 		
+
+		$this->data['text_shopping_cart'] = $this->language->get('text_shopping_cart');
+		$this->data['shopping_cart'] = $this->url->link('checkout/cart');
+		$this->children = array(
+			'module/cart'
+		);
+
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/column_right.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/common/column_right.tpl';
 		} else {
