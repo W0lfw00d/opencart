@@ -81,7 +81,7 @@ label {
 	float: left;
 	width: 180px;
 	border-right: 1px solid;
-	margin-top: 105px;
+	margin-top: 180px;
 	margin-bottom:147px;
 	position:absolute; 
 	top:0; 
@@ -91,12 +91,15 @@ label {
 	float: right;
 	width: 180px;
 	border-left: 1px solid;
-	margin-top: 105px;
+	margin-top: 180px;
 	margin-bottom:147px;
 	position:absolute; 
 	top:0; 
 	left:799px;
 	bottom:0;
+}
+.static {
+	font-weight: bold;
 }
 #content {
 	min-height: 400px;
@@ -110,25 +113,37 @@ label {
 }
 /* header */
 #header {
-	height: 105px;
-	margin-bottom: 7px;
+	height: 125px;
+/*	margin-bottom: 7px; */
 	padding-bottom: 4px;
 	position: relative;
 	z-index: 99;
-	background: darkseagreen;
+	background: #0F750F;
 	-webkit-border-top-right-radius: 25px;  
 	-webkit-border-top-left-radius: 25px;
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+#header a, #header a:visited, #header div {
+        color:white;
 }
 #header #logo {
 	position: absolute;
-	top: 35px;
+	top: 60px;
 	left: 15px;
+	width: 950px;
+	clear: both;
+	float: left;
 }
 #language {
 	width: 140px;
 	position: absolute;
-	top: 0px;
+	top: 5px;
 	left: 160px;
+}
+#language .option {
+        float:left;
+        margin-right:10px;
 }
 #currency {
 	width: 140px;
@@ -243,8 +258,8 @@ label {
 }
 #header #search {
 	position: absolute;
-	top: 35px;
-	right: 10px;
+	top: 5px;
+	right: 21px;
 	width: 298px;
 	z-index: 15;
 }
@@ -275,7 +290,7 @@ label {
 	z-index: 5;
 	width: 298px;
 	text-align: right;
-	color: #999999;
+	color: lightgray;
 }
 #header .links {
 	position: absolute;
@@ -302,6 +317,25 @@ label {
 }
 #header .links a + a {
 	margin-left: 8px;
+}
+/* main menu */
+#main_menu {
+    width: 100%;
+    height: 40px;
+}
+#main_menu ul li {
+    float: left;
+    height: 100%;
+    border: 1px solid;
+    width: 320px;
+    list-style: none;
+    padding: 5px 0px;
+    text-align: center;
+}
+#main_menu ul {
+    height: 100%;
+    padding: 0;
+    margin-top: 0;
 }
 /* menu */
 #menu {
