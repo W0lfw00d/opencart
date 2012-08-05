@@ -7,8 +7,8 @@
               <a onclick="$('input[name=\'language_code\']').attr('value', '<?php echo $language['code']; ?>'); $('#language_form').submit();">
                 <img src="image/flags/<?php echo $language['image']; ?>" alt="<?php echo $language['name']; ?>" />
               </a>
-            <?php } ?>
             </div>
+            <?php } ?>
           <div>
             <input type="hidden" name="language_code" value="" />
             <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />

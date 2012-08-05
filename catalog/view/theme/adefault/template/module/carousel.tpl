@@ -1,3 +1,4 @@
+<!--
 <div id="carousel<?php echo $module; ?>">
   <ul class="jcarousel-skin-opencart">
     <?php foreach ($banners as $banner) { ?>
@@ -5,6 +6,7 @@
     <?php } ?>
   </ul>
 </div>
+-->
 <script type="text/javascript"><!--
 $('#carousel<?php echo $module; ?> ul').jcarousel({
 	vertical: false,
