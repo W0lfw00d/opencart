@@ -105,10 +105,14 @@ label {
 	margin: 3px;
 	min-height: 400px;
 	margin-bottom: 25px;
+	border:1px solid grey;
+	padding:5px;
 }
 #column-left + #column-right + #content, #column-left + #content {
 	margin-left: 195px;
 	margin-top:0;
+	border:0;
+	padding:0;
 }
 #column-right + #content {
 	margin-right: 195px;
@@ -140,7 +144,7 @@ label {
 	width: 140px;
 	position: absolute;
 	top: 5px;
-	left: 160px;
+	left: 10px;
 }
 #language .option {
         float:left;
@@ -649,6 +653,37 @@ a.button:hover, input.button:hover {
 #notification {
     padding: 0 184px;
 }
+/* home page */
+#home-wrapper {
+
+}
+#wrapper {
+    float: left;
+}
+#zip-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+	height: 324px;
+}
+#zipcode {
+    width: 300px;
+}
+#map {
+    float: right;
+    width: 650px;
+    margin-left: 5px;   
+    height: 324px;
+}
+#map #img-map{
+    float:left;
+    padding:5px;
+    margin-left:21px;
+}
+#map #img-product{
+    float:right;
+    padding:5px;
+    margin-right:35px;
+}
 /* box */
 .box {
 	margin-bottom: 20px;
@@ -680,6 +715,8 @@ a.button:hover, input.button:hover {
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 15px;
 	margin-left: 5px;
 	margin-bottom: 15px;
 }

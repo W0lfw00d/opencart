@@ -67,11 +67,22 @@ DD_belatedPNG.fix('#logo img');
   </div>
 </div>
   <!-- div class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></div -->
+<?php 
+  if(isset($_GET['route'])){
+    if(strpos($_GET['route'],'product')!==false){
+      $main_menu_class = "step2";
+    } else {
+      $main_menu_class = "step3";
+    }
+  } else {
+    $main_menu_class = "step1";
+  }
+?>
 <div id="main_menu">
-  <ul>
-    <li class="<?php echo $step1 ?>"><a href="index.php">HOME</a></li>
-    <li class="<?php echo $step2 ?>"><a href="index.php?route=product/category&path=20">MENUKAART</a></li>
-    <li class="<?php echo $step3 ?>"><a href="index.php?route=checkout/checkout">BESTELLEN</a></li>
+  <ul class="<?php echo $main_menu_class; ?>">
+    <li><a href="index.php">HOME</a></li>
+    <li><a href="index.php?route=product/category&path=20">MENUKAART</a></li>
+    <li><a href="index.php?route=checkout/checkout">BESTELLEN</a></li>
   </ul>
 </div>
 <!--script type="text/javascript">
