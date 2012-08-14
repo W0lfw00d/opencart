@@ -46,9 +46,9 @@ DD_belatedPNG.fix('#logo img');
 <body>
 <div id="container">
 <div id="header">
-  <?php if ($logo) { ?>
-  <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
-  <?php } ?>
+  <div id="logo">
+    <a href="<?php echo $home; ?>"><img src="catalog/view/theme/adefault/image/drinkdoor-logo.jpg" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a>
+  </div>
   <?php echo $language; ?>
   <div id="search">
     <div class="button-search"></div>
@@ -68,12 +68,14 @@ DD_belatedPNG.fix('#logo img');
 </div>
   <!-- div class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></div -->
 <?php 
+  $route = "";
   if(isset($_GET['route'])){
-    if(strpos($_GET['route'],'product')!==false){
-      $main_menu_class = "step2";
-    } else {
-      $main_menu_class = "step3";
-    }
+    $route = $_GET['route'];
+  }  
+  if(strpos($route,'product')!==false){
+    $main_menu_class = "step2";
+  } elseif(strpos($route,'checkout')!==false) {
+    $main_menu_class = "step3";
   } else {
     $main_menu_class = "step1";
   }
