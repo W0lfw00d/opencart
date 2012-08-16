@@ -134,8 +134,8 @@ label {
 }
 #header #logo {
 	position: absolute;
-	top: 10px;
-	left: 55px;
+	top: 0px;
+	left: 84px;
 	clear: both;
 	float: left;
 }
@@ -338,7 +338,7 @@ label {
 #main_menu ul li {
     float: left;
     border: 1px solid white;
-    width: 244px;
+    width: 242px;
     list-style: none;
     padding: 5px 0px;
     text-align: center;
@@ -1581,7 +1581,6 @@ a.button:hover, input.button:hover {
 /* footer */ 
 #footer {
 	clear: both;
-	overflow: auto;
 	padding: 30px 0px;
 	border: 1px solid #ddd;
 	background: #eee;
@@ -1632,10 +1631,10 @@ a.button:hover, input.button:hover {
         background-color: black;
 }
 #footer .call-us {
-	margin: 0px 33px;
-	text-align: left;
-	float: left;
-	margin-right: 3px;
+		margin: 0px 33px;
+		text-align: left;
+		float: left;
+		margin-right: 3px;
 }
 #footer .call-us p {
         color: rgb(68, 179, 68);
@@ -1646,7 +1645,6 @@ a.button:hover, input.button:hover {
 }
 #footer .call-us h1 {
     margin-bottom: 5px;
-    
     margin-top: -8px;
     font-weight: bold;
 }

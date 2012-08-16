@@ -47,7 +47,7 @@ DD_belatedPNG.fix('#logo img');
 <div id="container">
 <div id="header">
   <div id="logo">
-    <a href="<?php echo $home; ?>"><img src="catalog/view/theme/adefault/image/drinkdoor-logo.jpg" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a>
+    <a href="<?php echo $home; ?>"><img src="catalog/view/theme/adefault/image/logo.gif" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a>
   </div>
   <?php echo $language; ?>
   <div id="search">
