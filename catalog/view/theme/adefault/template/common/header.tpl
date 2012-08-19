@@ -25,6 +25,7 @@
 <link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
 <script type="text/javascript" src="catalog/view/javascript/jquery/ui/external/jquery.cookie.js"></script>
 <script type="text/javascript" src="catalog/view/javascript/jquery/colorbox/jquery.colorbox.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/jquery.carouFredSel-5.6.4-packed.js"></script>
 <link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/colorbox/colorbox.css" media="screen" />
 <script type="text/javascript" src="catalog/view/javascript/jquery/tabs.js"></script>
 <script type="text/javascript" src="catalog/view/javascript/common.js"></script>
@@ -47,26 +48,18 @@ DD_belatedPNG.fix('#logo img');
 <div id="container">
 <div id="header">
   <div id="logo">
-    <a href="<?php echo $home; ?>"><img src="catalog/view/theme/adefault/image/logo.gif" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a>
+    <a href="<?php echo $home; ?>"><img src="catalog/view/theme/adefault/image/logo.jpg" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a>
+  </div>
+  <div id="ideal">
+    <img src="catalog/view/theme/adefault/image/ideal.png" title="iDEAL" alt="ideal" />
   </div>
   <?php echo $language; ?>
-  <div id="search">
-    <div class="button-search"></div>
-    <?php if ($filter_name) { ?>
-    <input type="text" name="filter_name" value="<?php echo $filter_name; ?>" />
-    <?php } else { ?>
-    <input type="text" name="filter_name" value="<?php echo $text_search; ?>" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
-    <?php } ?>
-  </div>
-  <div id="welcome">
-    <?php if (!$logged) { ?>
-    <?php echo $text_welcome; ?>
-    <?php } else { ?>
-    <?php echo $text_logged; ?>
-    <?php } ?>
+  <div id="header_text">
+    <div id="top_header_text" class="darkGreen">Bezorgservice van 21:<span class="sup">00</span> tot 6:<span class="sup">00</span></div>
+    <div id="clock"><img src="catalog/view/theme/adefault/image/clock.jpg" alt="delivery times"/></div>
+    <div id="bottom_header_text" class="lightGreen">Thuisbezorgd binnen 30 min</div>
   </div>
 </div>
-  <!-- div class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></div -->
 <?php 
   $route = "";
   if(isset($_GET['route'])){
@@ -87,11 +80,4 @@ DD_belatedPNG.fix('#logo img');
     <li><a href="index.php?route=checkout/checkout"><?php echo $menu_checkout; ?></a></li>
   </ul>
 </div>
-<!--script type="text/javascript">
-$('.switcher').bind('click', function() {
-	$(this).find('.option').slideToggle('fast');
-});
-$('.switcher').bind('mouseleave', function() {
-	$(this).find('.option').slideUp('fast');
-}); </script-->
 <div id="notification"></div>

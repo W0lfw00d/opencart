@@ -6,49 +6,42 @@ function DisplayForm($postCode, $errors, $okMessage)
 		<div class="box" id="zipcode">
 		  <div class="box-heading"><?php echo $_SESSION['postcode_title'];?></div>
 			<div class="box-content">
+				<div class="zip-header">
+					<?php echo $_SESSION['postcode_text'];?>
+				</div>
 				<div class="box-product">
-						<form action="<?= $_SERVER['PHP_SELF'] ?>" method="POST"> 						
-						<table border="0" width="100%">
-							<tbody>								
-								<tr>
-									<td >										
-										<?php 
-										if(isset($_SESSION['doPostCode']) && ($_SESSION['doPostCode'] == 'true')){	
-											$_SESSION['doPostCode']='';?>
-												<div class="error" style="border-bottom: 1px solid #DBDEE1;"> <?php echo $_SESSION['postcode_warning'];?>:</div>
-										<?php }
-										else {	
-											if (isset($errors['postcode']) && $errors['postcode'] != ''){?>   	
-												<div class="error" style="border-bottom: 1px solid #DBDEE1;"><?= $errors['postcode'] ?> </div>
-											<?php 	}
-											else { 
-												if ($okMessage != ''){	?>
-												<div class="name" style="border-bottom: 1px solid #DBDEE1;"><?= $okMessage ?> </div>
-											<?php 	}
-												else {	?>   
-													<div class="name" style="border-bottom: 1px solid #DBDEE1;"> <?php echo $_SESSION['postcode_text'];?></div>						
-											<?php }
-											}
-										}?>  
-									</td>
-								</tr>
-								<tr>
-									<td style="padding: 10px 0;">
-										<?php if (strlen($postCode) > 0) { ?>
-											<input type="text" MAXLENGTH="4" size="14" placeholder="<?php echo $_SESSION['postcode_example'];?>" value="<?= htmlentities($postCode) ?>" name="postcode" style="font-size: 20px; height: 26px;">
-										<?php } 
-											else  { ?>
-											<input type="text" MAXLENGTH="4" size="14" placeholder="<?php echo $_SESSION['postcode_example'];?>" name="postcode" style="font-size: 20px; height: 26px;">
-										<?php } ?>
-									</td>
-								</tr>
-								<tr>
-									<td >	
-										<input type="submit"  value="<?php echo $_SESSION['postcode_submit'];?>" style="background-color:#999999; color:#FFFFFF; cursor: pointer; font-size: 20px; height: 36px;">
-									</td>
-								</tr>
-							</tbody>
-						</table>												
+					<form action="<?= $_SERVER['PHP_SELF'] ?>" method="POST"> 						
+						<div id="map">
+							<img src="catalog/view/theme/adefault/image/nederland.png"/>
+						</div>
+						<div class="zip-input">
+							<?php if (strlen($postCode) > 0) { ?>
+								<input type="text" MAXLENGTH="4" size="14" placeholder="<?php echo $_SESSION['postcode_example'];?>" value="<?= htmlentities($postCode) ?>" name="postcode" style="font-size: 20px; height: 26px;">
+							<?php } 
+								else  { ?>
+								<input type="text" MAXLENGTH="4" size="14" placeholder="<?php echo $_SESSION['postcode_example'];?>" name="postcode" style="font-size: 20px; height: 26px; border:1px solid black; background: white">
+							<?php } ?>
+						</div>
+						<div class="zip-result">
+							<?php 
+							if(isset($_SESSION['doPostCode']) && ($_SESSION['doPostCode'] == 'true')){	
+								$_SESSION['doPostCode']='';?>
+									<div class="error"> <?php echo $_SESSION['postcode_warning'];?>:</div>
+							<?php }
+							else {	
+								if (isset($errors['postcode']) && $errors['postcode'] != ''){?>   	
+									<div class="error"><?= $errors['postcode'] ?> </div>
+								<?php 	}
+								else { 
+									if ($okMessage != ''){	?>
+									<div class="name"><?= $okMessage ?> </div>
+								<?php }
+								}
+							}?>  
+						</div>
+						<div class="button">
+							<input type="submit"  value="<?php echo $_SESSION['postcode_submit'];?>" style="border:1px solid black; background-color:lightgray; color:black; cursor: pointer; height: 26px;width: 230px;text-align: left;">
+						</div>										
 					</form> 
 				</div>
 			</div>

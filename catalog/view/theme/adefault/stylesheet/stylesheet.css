@@ -4,7 +4,7 @@ html {
 	padding: 0;
 }
 body {
-	background-color: #000;
+	background-color: lightgray;
 	color: #000000;
 	font-family:tahoma,geneva,sans-serif;
 	margin: 0px;
@@ -74,13 +74,16 @@ label {
 	text-align: left;
 	border: 1px solid black;
 	position:relative;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
 }
 #column-left {
 	float: left;
 	width: 178px;
 	border-right: 1px solid;
-	margin-top: 192px;
-	margin-bottom:147px;
+	margin-top: 173px;
+	margin-bottom: 284px;
 	position:absolute; 
 	top:0; 
 	bottom:0;
@@ -90,8 +93,8 @@ label {
 	float: right;
 	width: 177px;
 	border-left: 1px solid;
-	margin-top: 191px;
-	margin-bottom:147px;
+	margin-top: 173px;
+	margin-bottom: 284px;
 	position:absolute; 
 	top: 0; 
 	left: 799px;
@@ -104,7 +107,7 @@ label {
 #content {
 	margin: 3px;
 	min-height: 400px;
-	margin-bottom: 25px;
+	margin-bottom: 5px;
 	border:1px solid grey;
 	padding:5px;
 }
@@ -119,7 +122,7 @@ label {
 }
 /* header */
 #header {
-	height: 125px;
+	height: 105px;
 /*	margin-bottom: 7px; */
 	padding-bottom: 4px;
 	position: relative;
@@ -128,6 +131,10 @@ label {
 	width: 974px;
 	border: 3px solid white;
 	border-bottom: 0;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+
 }
 #header a, #header a:visited, #header div {
         color: darkgray;
@@ -135,7 +142,7 @@ label {
 #header #logo {
 	position: absolute;
 	top: 0px;
-	left: 84px;
+	left: 30px;
 	clear: both;
 	float: left;
 }
@@ -143,7 +150,7 @@ label {
 	width: 140px;
 	position: absolute;
 	top: 5px;
-	left: 10px;
+	left: 910px;
 }
 #language .option {
         float:left;
@@ -310,6 +317,44 @@ label {
 #header .links a + a {
 	margin-left: 8px;
 }
+#ideal {
+    position: absolute;
+    top: 25px;
+    left: 908px;
+}
+#header_text {
+    position: absolute;
+    left: 320px;
+    text-align: right;
+    float: right;
+    font-size: 24px;
+    width: 560px;
+    top: 5px;
+    font-weight: bold;
+    line-height: 38px;
+}
+#clock {
+    float: right;
+    padding-right: 10px;
+}
+#header #top_header_text {
+    color: #0f6939;
+    float: right;
+}
+#header #bottom_header_text {
+    color: #3bb64c;
+    float: right;
+}
+.sup {
+    vertical-align: super;
+    font-size: 0.5em;
+}
+.darkGreen {
+    color: #0F6939;
+}
+.lightGreen {
+    color: #3bb64c;
+}
 /* main menu */
 #main_menu {
     width: 974px;
@@ -430,7 +475,7 @@ label {
 	vertical-align: middle;
 	display: table-cell;
 	width: 580px;
-	border-top: 1px solid #999;
+	border-top: 1px solid transparent;
 }
 #column-right + #content .breadcrumb a {
     color:white;
@@ -667,26 +712,54 @@ a.button:hover, input.button:hover {
 /* home page */
 #zipcode {
     float: left;
-    width: 440px;
+    width: 600px;
+    margin-right: 80px;
 }
 #zipcode .box-content{
-    height: 279px;
+    height: 195px;
+    border: 1px solid;
+    border-radius: 12px;
+    padding: 0;
+    border-top: 0;
+    margin-left: 10px;
+}
+#zipcode .box-product {
+    padding: 10px;
+    width: 95%;
+}
+#zipcode .box-heading {
+    background: transparent;
+    color: #0F6939;
+    border: 0;
+}
+.zip-header {
+    background: lightgray;
+    margin: 0;
+    padding: 5px 15px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.zip-result {
+    float: left;
+    width: 190px;
+    margin-top: 20px;
+}
+.zip-result .name {
+    color: #3bb64c;
+}
+.zip-input {
+    float: left;
+    width: 200px;
+    margin-left: 4px;
+    margin: 20px 2px;
+}
+#zipcode .button {
+    float: left;
+    clear: left;
 }
 #map {
     float: right;
-    width: 500px;
-    margin-left: 5px;   
-    height: 324px;
-}
-#map #img-map{
-    float:left;
-    padding:5px;
-    margin-left:21px;
-}
-#map #img-product{
-    float:right;
-    padding:5px;
-    margin-right:35px;
+    margin: -3px;
 }
 #car-banner {
     clear: both;
@@ -695,14 +768,12 @@ a.button:hover, input.button:hover {
 }
 #car-banner img {
     width: 960px;
-    border: 1px solid lightgray;
 }
 /* box */
 .box {
 	margin-bottom: 20px;
 }
 .box .box-heading, #cart .heading {
-	border-top: 1px solid #999;
 	background: url('../image/topmenu.png') repeat-x;
 	padding: 8px 10px 7px 10px;
 	font-family:tahoma,geneva,sans-serif;
@@ -901,13 +972,30 @@ a.button:hover, input.button:hover {
 }
 .product-grid{
     border: 1px solid #eee;
-    padding:11px 10px 0 11px; margin-bottom:20px;
+    padding:11px 10px 0 11px; 
+    margin-bottom:20px;
+}
+.product-grid.home {
+    float: left;
+    margin-left: 10px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.product-grid-home-border {
+    border: 1px solid black;
+    float: left;
+    padding: 10px 16px 0px 16px;
+    margin-left: 10px;
 }
 .product-list {
     border: 1px solid #eee;
-    padding:10px 20px 20px 20px; margin-bottom:20px;
+    padding:10px 20px 20px 20px; 
+    margin-bottom:20px;
 }
-.product-list > div:first-child{ padding-top:20px}
+.product-list > div:first-child{ 
+	padding-top:20px;
+}
 
 .product-grid > div {
     -webkit-transition: all 0.3s ease-in-out;
@@ -1587,6 +1675,13 @@ a.button:hover, input.button:hover {
 	height: 86px;
 	border-left: 3px solid white;
 	border-right: 3px solid white;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-moz-top-left-radius: 0;
+	border-top-left-radius: 0;
+	-moz-border-top-right-radius: 0;
+	border-top-right-radius: 0;
 }
 #footer h3 {
 	color: #000000;
@@ -1631,22 +1726,37 @@ a.button:hover, input.button:hover {
         background-color: black;
 }
 #footer .call-us {
-		margin: 0px 33px;
-		text-align: left;
+		margin: 0px 74px;
+		text-align: right;
 		float: left;
 		margin-right: 3px;
 }
 #footer .call-us p {
-        color: rgb(68, 179, 68);
+        color: #3db64d;
         font-size: 24px;
         font-weight:bold;
         letter-spacing:2px;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        margin-bottom: 5px;
 }
 #footer .call-us h1 {
     margin-bottom: 5px;
     margin-top: -8px;
     font-weight: bold;
+    color: #0f6939;
+}
+#no_alcohol {
+    float: right;
+    margin-right: 16px;
+}
+#social_media {
+    float: right;
+    margin-right: 115px;
+}
+#social_media img {
+    height: 30px;
+}
+#social_media a {
+    text-decoration: none;
 }
 /* banner */
 .banner div {
