@@ -77,19 +77,8 @@
       </div>
       <?php } ?>
       <div class="cart">
-        <div><?php echo $text_qty; ?>
-          <input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" />
-          <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
-          &nbsp;<input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
-          </div>
-        <div></div>
-        <?php if ($minimum > 1) { ?>
-        <div class="minimum"><?php echo $text_minimum; ?></div>
-        <?php } ?>
-      </div>
-      <<!--div class="cart">
         <input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" />
-      </div-->>
+      </div>
     </div>
     <?php } ?>
   </div>

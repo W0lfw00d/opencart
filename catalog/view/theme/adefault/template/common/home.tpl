@@ -13,7 +13,7 @@ DisplayMapAndWine();
 ?>
 
 	<div id="car-banner">
-		<img src="catalog/view/theme/adefault/image/car.jpg"/>
+		<img src="catalog/view/theme/adefault/image/car.gif"/>
 	</div>
 </div>
 <?php echo $footer; ?>

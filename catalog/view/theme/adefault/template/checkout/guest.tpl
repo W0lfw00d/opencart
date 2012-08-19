@@ -16,17 +16,17 @@
   <input type="text" name="telephone" value="<?php echo $telephone; ?>" class="large-field" />
   <br />
   <br />
-  <?php echo $entry_fax; ?><br />
-  <input type="text" name="fax" value="<?php echo $fax; ?>" class="large-field" />
-  <br />
-  <br />
+  <!--<?php echo $entry_fax; ?><br />-->
+  <input type="text" name="fax" value="<?php echo $fax; ?>" class="large-field"  style="display:none" />
+  <!--<br /> -->
+  <!--<br />-->
 </div>
 <div class="right">
   <h2><?php echo $text_your_address; ?></h2>
-  <?php echo $entry_company; ?><br />
-  <input type="text" name="company" value="<?php echo $company; ?>" class="large-field" />
-  <br />
-  <br />
+  <!--<?php echo $entry_company; ?><br />-->
+  <input type="text" name="company" value="<?php echo $company; ?>" class="large-field" style="display:none"/>
+  <!--<br />-->
+  <!--<br />-->
   <div style="display: <?php echo (count($customer_groups) > 1 ? 'block' : 'none'); ?>;"><?php echo $entry_account; ?><br />
     <select name="customer_group_id" class="large-field">
       <?php foreach ($customer_groups as $customer_group) { ?>
@@ -40,10 +40,10 @@
     <br />
     <br />
   </div>
-  <div id="company-id-display"><span id="company-id-required" class="required">*</span> <?php echo $entry_company_id; ?><br />
-    <input type="text" name="company_id" value="<?php echo $company_id; ?>" class="large-field" />
-    <br />
-    <br />
+  <div id="company-id-display"><!--<span id="company-id-required" class="required">*</span> <!--<?php echo $entry_company_id; ?><br />-->
+    <input type="text" name="company_id" value="<?php echo $company_id; ?>" class="large-field" style="display:none"/>
+   <!-- <br />-->
+   <!-- <br />-->
   </div>
   <div id="tax-id-display"><span id="tax-id-required" class="required">*</span> <?php echo $entry_tax_id; ?><br />
     <input type="text" name="tax_id" value="<?php echo $tax_id; ?>" class="large-field" />
@@ -54,10 +54,10 @@
   <input type="text" name="address_1" value="<?php echo $address_1; ?>" class="large-field" />
   <br />
   <br />
-  <?php echo $entry_address_2; ?><br />
-  <input type="text" name="address_2" value="<?php echo $address_2; ?>" class="large-field" />
-  <br />
-  <br />
+  <!--<?php echo $entry_address_2; ?><br />-->
+  <input type="text" name="address_2" value="<?php echo $address_2; ?>" class="large-field" style="display:none"/>
+  <!--<br />-->
+  <!--<br />-->
   <span class="required">*</span> <?php echo $entry_city; ?><br />
   <input type="text" name="city" value="<?php echo $city; ?>" class="large-field" />
   <br />

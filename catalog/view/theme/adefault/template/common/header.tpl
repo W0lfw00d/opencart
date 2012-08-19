@@ -82,9 +82,9 @@ DD_belatedPNG.fix('#logo img');
 ?>
 <div id="main_menu">
   <ul class="<?php echo $main_menu_class; ?>">
-    <li><a href="index.php">HOME</a></li>
-    <li><a href="index.php?route=product/category&path=20">MENUKAART</a></li>
-    <li><a href="index.php?route=checkout/checkout">BESTELLEN</a></li>
+    <li><a href="index.php"><?php echo $menu_home; ?></a></li>
+    <li><a href="index.php?route=product/category&path=20"><?php echo $menu_category; ?></a></li>
+    <li><a href="index.php?route=checkout/checkout"><?php echo $menu_checkout; ?></a></li>
   </ul>
 </div>
 <!--script type="text/javascript">

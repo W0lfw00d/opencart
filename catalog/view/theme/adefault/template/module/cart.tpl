@@ -1,5 +1,5 @@
 <div id="cart">
-  <div class="heading">Winkelwagen (<?php echo (int)strstr($text_items, ' ',true);?>)</div>
+  <div class="heading"><?php  echo $heading_title;?>(<?php echo (int)strstr($text_items, ' ',true);?>)</div>
   <div class="content">
     <?php if ($products || $vouchers) { ?>
     <div class="mini-cart-info">
@@ -45,13 +45,11 @@
 </div>
 <div class="box static">
   <div class="box-content">
-      Prijzen incl. BTW
+      <?php echo $cart_price_inc;?>
   </div>
-  <div class="box-content">
-      Onder de 50 Euro<br/>
-      5,95 bezorgkosten
+  <div class="box-content">      <?php echo $cart_delivery_costs;?>
   </div>
-  <div class="box-content">
-      Dranken zijn gekoeld.
+  <div class="box-content">      <?php echo $cart_drinks_cool;?>
+
   </div>
 </div>

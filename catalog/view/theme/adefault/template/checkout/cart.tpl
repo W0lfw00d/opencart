@@ -76,8 +76,8 @@
     </div>
   </form>
   <?php if ($coupon_status || $voucher_status || $reward_status || $shipping_status) { ?>
-  <h2><?php echo $text_next; ?></h2>
-  <div class="content">
+  <!--<h2><?php echo $text_next; ?></h2>-->
+  <div class="content" style="display:none">
     <p><?php echo $text_next_choice; ?></p>
     <table class="radio">
       <?php if ($coupon_status) { ?>
@@ -192,7 +192,7 @@
   </div>
   <div class="buttons">
     <div class="right"><a href="<?php echo $checkout; ?>" class="button"><?php echo $button_checkout; ?></a></div>
-    <div class="center"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_shopping; ?></a></div>
+    <div class="center"><a href="index.php?route=product/category&path=20" class="button"><?php echo $button_shopping; ?></a></div>
   </div>
   <?php echo $content_bottom; ?></div>
 <script type="text/javascript"><!--
