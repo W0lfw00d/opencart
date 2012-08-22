@@ -1,6 +1,11 @@
 <?php 
 class ControllerProductCategory extends Controller {  
 	public function index() { 
+		if(!isset($_SESSION['postcode']) || !isset($_SESSION['postcode_is_valid']) ||  ($_SESSION['postcode_is_valid']!='true')){	
+			$this->session->data['doPostCode'] = 'true';
+			$this->redirect($this->url->link('common/home'));
+		}
+	
 		$this->language->load('product/category');
 		
 		$this->load->model('catalog/category');
@@ -97,6 +102,9 @@ class ControllerProductCategory extends Controller {
 			$this->data['button_wishlist'] = $this->language->get('button_wishlist');
 			$this->data['button_compare'] = $this->language->get('button_compare');
 			$this->data['button_continue'] = $this->language->get('button_continue');
+						
+			$this->session->data['left_no_alcohol'] = $this->language->get('left_no_alcohol');
+			$this->session->data['left_delivery_time'] = $this->language->get('left_delivery_time');
 					
 			if ($category_info['image']) {
 				$this->data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get('config_image_category_width'), $this->config->get('config_image_category_height'));

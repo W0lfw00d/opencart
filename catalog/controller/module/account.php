@@ -34,6 +34,23 @@ class ControllerModuleAccount extends Controller {
 		$this->data['transaction'] = $this->url->link('account/transaction', '', 'SSL');
 		$this->data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
 
+
+		$this->data['text_returning_customer'] = $this->language->get('text_returning_customer');
+		$this->data['text_i_am_returning_customer'] = $this->language->get('text_i_am_returning_customer');
+    	$this->data['text_forgotten'] = $this->language->get('text_forgotten');
+
+    	$this->data['entry_email'] = $this->language->get('entry_email');
+    	$this->data['entry_password'] = $this->language->get('entry_password');
+
+    	$this->data['button_continue'] = $this->language->get('button_continue');
+		$this->data['button_login'] = $this->language->get('button_login');
+		$this->data['redirect'] = $this->url->link('common/home', '', 'SSL');
+		if (isset($this->request->post['email'])) {
+			$this->data['email'] = $this->request->post['email'];
+		} else {
+			$this->data['email'] = '';
+		}		
+		
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/account.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/module/account.tpl';
 		} else {

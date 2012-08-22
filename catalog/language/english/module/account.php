@@ -16,4 +16,12 @@ $_['text_download']    = 'Downloads';
 $_['text_return']      = 'Returns';
 $_['text_transaction'] = 'Transactions';
 $_['text_newsletter']  = 'Newsletter';
+
+$_['text_returning_customer']      = 'Returning Customer';
+$_['text_i_am_returning_customer'] = 'I am a returning customer';
+$_['text_forgotten']               = 'Forgotten Password';
+
+// Entry
+$_['entry_email']                  = 'E-Mail Address:';
+$_['entry_password']               = 'Password:';
 ?>

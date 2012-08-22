@@ -1,9 +1,9 @@
 <?php echo $header; 
 include("postcodeForm.php");?>
-<?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
+A<?php echo $column_left; ?>B<?php echo $column_right; ?>C
+<div id="content"> D<?php echo $content_top; ?>E
 <h1 style="display: none;"><?php echo $heading_title; ?></h1>
-
+F
 <?php	
 CheckPostcode();
 ?>

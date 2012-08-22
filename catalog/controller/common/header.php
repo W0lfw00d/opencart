@@ -48,7 +48,31 @@ class ControllerCommonHeader extends Controller {
 		$this->data['text_logged'] = sprintf($this->language->get('text_logged'), $this->url->link('account/account', '', 'SSL'), $this->customer->getFirstName(), $this->url->link('account/logout', '', 'SSL'));
 		$this->data['text_account'] = $this->language->get('text_account');
     	$this->data['text_checkout'] = $this->language->get('text_checkout');
-				
+		
+		
+    	$this->data['postcode_text'] = $this->language->get('postcode_text');
+    	$this->data['postcode_warning'] = $this->language->get('postcode_warning');
+    	$this->data['postcode_error'] = $this->language->get('postcode_error');
+    	$this->data['postcode_submit'] = $this->language->get('postcode_submit');
+    	$this->data['postcode_title'] = $this->language->get('postcode_title');
+    	$this->data['postcode_example'] = $this->language->get('postcode_example');
+    	$this->data['header_delivery'] = $this->language->get('header_delivery');
+    	$this->data['header_delivered_in'] = $this->language->get('header_delivered_in');
+    	$this->data['menu_home'] = $this->language->get('menu_home');
+    	$this->data['menu_category'] = $this->language->get('menu_category');
+    	$this->data['menu_checkout'] = $this->language->get('menu_checkout');
+		
+    	$this->session->data['postcode_title'] = $this->language->get('postcode_title');
+    	$this->session->data['postcode_text'] = $this->language->get('postcode_text');
+    	$this->session->data['postcode_warning'] = $this->language->get('postcode_warning');
+    	$this->session->data['postcode_error'] = $this->language->get('postcode_error');
+    	$this->session->data['postcode_error_to_short'] = $this->language->get('postcode_error_to_short');
+    	$this->session->data['postcode_error_to_long'] = $this->language->get('postcode_error_to_long');
+    	$this->session->data['postcode_ok'] = $this->language->get('postcode_ok');
+    	$this->session->data['postcode_submit'] = $this->language->get('postcode_submit');
+    	$this->session->data['postcode_example'] = $this->language->get('postcode_example');
+		
+		
 		$this->data['home'] = $this->url->link('common/home');
 		$this->data['wishlist'] = $this->url->link('account/wishlist');
 		$this->data['logged'] = $this->customer->isLogged();

@@ -26,4 +26,6 @@ $_['text_rating_desc']  = 'Rating (Highest)';
 $_['text_model_asc']    = 'Model (A - Z)';
 $_['text_model_desc']   = 'Model (Z - A)';
 $_['text_limit']        = 'Show:';
+$_['left_no_alcohol']        = '16, no alcohol <br/>18, no strong drinks ';
+$_['left_delivery_time']        = 'Delivery time:<br/> 18.00 - 03.00';
 ?>

@@ -133,6 +133,13 @@ function addToCart(product_id, quantity) {
 			}	
 		}
 	});
+	$('#cart').addClass('active');
+		
+	$('#cart').load('index.php?route=module/cart #cart > *');
+		
+	$('#cart').live('mouseleave', function() {
+		$(this).removeClass('active');
+	});
 }
 function addToWishList(product_id) {
 	$.ajax({

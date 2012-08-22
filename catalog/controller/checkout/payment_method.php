@@ -51,7 +51,14 @@ class ControllerCheckoutPaymentMethod extends Controller {
 					$method = $this->{'model_payment_' . $result['code']}->getMethod($payment_address, $total); 
 					
 					if ($method) {
-						$method_data[$result['code']] = $method;
+						if($this->customer->isLogged() && $this->customer->getCustomerGroupId() == 2){
+							$method_data[$result['code']] = $method;
+						}
+						else {
+							if($result['code']=='mollie_ideal'){
+								$method_data[$result['code']] = $method;
+							}
+						}
 					}
 				}
 			}

@@ -3,6 +3,8 @@
 <?php echo $column_left; ?>
 <?php echo $column_right; ?>
 
+<?php echo $content_top; ?>
+<?php echo $content_bottom ?>
 <div id="content">
 
 <?php							

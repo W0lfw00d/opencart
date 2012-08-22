@@ -16,17 +16,9 @@
   <input type="text" name="telephone" value="<?php echo $telephone; ?>" class="large-field" />
   <br />
   <br />
-  <?php echo $entry_fax; ?><br />
-  <input type="text" name="fax" value="<?php echo $fax; ?>" class="large-field" />
-  <br />
-  <br />
 </div>
 <div class="right">
   <h2><?php echo $text_your_address; ?></h2>
-  <?php echo $entry_company; ?><br />
-  <input type="text" name="company" value="<?php echo $company; ?>" class="large-field" />
-  <br />
-  <br />
   <div style="display: <?php echo (count($customer_groups) > 1 ? 'block' : 'none'); ?>;"><?php echo $entry_account; ?><br />
     <select name="customer_group_id" class="large-field">
       <?php foreach ($customer_groups as $customer_group) { ?>
