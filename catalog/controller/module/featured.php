@@ -61,6 +61,7 @@ class ControllerModuleFeatured extends Controller {
 				);
 			}
 		}
+		$this->session->data['products'] = $this->data['products'];
 
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/featured.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/module/featured.tpl';

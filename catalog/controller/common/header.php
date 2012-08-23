@@ -56,7 +56,10 @@ class ControllerCommonHeader extends Controller {
     	$this->data['postcode_submit'] = $this->language->get('postcode_submit');
     	$this->data['postcode_title'] = $this->language->get('postcode_title');
     	$this->data['postcode_example'] = $this->language->get('postcode_example');
-    	$this->data['header_delivery'] = $this->language->get('header_delivery');
+    	$this->data['header_delivery_1'] = $this->language->get('header_delivery_1');
+    	$this->data['header_delivery_2'] = $this->language->get('header_delivery_2');
+    	$this->data['header_delivery_00_1'] = $this->language->get('header_delivery_00_1');
+    	$this->data['header_delivery_00_2'] = $this->language->get('header_delivery_00_2');
     	$this->data['header_delivered_in'] = $this->language->get('header_delivered_in');
     	$this->data['menu_home'] = $this->language->get('menu_home');
     	$this->data['menu_category'] = $this->language->get('menu_category');

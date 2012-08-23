@@ -11,11 +11,11 @@
     </ul>
   </div>
   <div class="call-us">
-    <h1>Bel en <span class="lightGreen">DRINK</span>DOOR!</h1>
-    <p>06-12345678</p>
+    <h1><?php echo $call_and; ?> <span class="lightGreen"><?php echo $drink; ?></span><?php echo $door; ?></h1>
+    <p><?php echo $phone_number; ?></p>
   </div>
   <div id="no_alcohol">
-    <img src="catalog/view/theme/adefault/image/Geen_Alcohol.png" title="geen alchohol jonger dan 16, geen sterke drank jonger dan 18" alt="geen alchohol jonger dan 16, geen sterke drank jonger dan 18" />
+    <img src="catalog/view/theme/adefault/image/<?php echo $no_alcohol_image; ?>" title="<?php echo $no_alcohol_title; ?>" alt="<?php echo $no_alcohol_alt; ?>" />
   </div>
   <div id="social_media">
     <a href="http://www.facebook.com//drinkdoor">

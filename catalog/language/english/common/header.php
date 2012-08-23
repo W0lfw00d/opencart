@@ -8,7 +8,10 @@ $_['text_welcome']        = 'Welcome visitor you can <a href="%s">login</a> or <
 $_['text_logged']         = 'You are logged in as <a href="%s">%s</a> <b>(</b> <a href="%s">Logout</a> <b>)</b>';
 $_['text_account']        = 'My Account';
 $_['text_checkout']       = 'Checkout';
-$_['header_delivery']      = 'Deliveryservice from 21:00 to 6:00';
+$_['header_delivery_1']      = 'Deliveryservice from 21:';
+$_['header_delivery_2']      = ' to 06:';
+$_['header_delivery_00_1']      = '00';
+$_['header_delivery_00_2']      = '00';
 $_['header_delivered_in'] = 'Delivered within 30 min';
 $_['postcode_title']      = 'Check to see if we also deliver in you region';
 $_['postcode_text']       = 'Fill in your zipcode please';

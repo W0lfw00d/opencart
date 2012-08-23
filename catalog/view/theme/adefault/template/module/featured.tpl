@@ -1,7 +1,4 @@
-<div class="box">
-  <div class="box-heading"><?php echo $heading_title; ?></div>
-  <div class="box-content">
-    <div class="box-product">
+<div class="product-grid-home-border">	<div class="product-grid home">
       <?php foreach ($products as $product) { ?>
       <div>
         <?php if ($product['thumb']) { ?>
@@ -25,4 +22,3 @@
       <?php } ?>
     </div>
   </div>
-</div>

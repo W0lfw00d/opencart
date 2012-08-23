@@ -55,9 +55,9 @@ DD_belatedPNG.fix('#logo img');
   </div>
   <?php echo $language; ?>
   <div id="header_text">
-    <div id="top_header_text" class="darkGreen">Bezorgservice van 21:<span class="sup">00</span> tot 6:<span class="sup">00</span></div>
+    <div id="top_header_text" class="darkGreen"><?php echo $header_delivery_1; ?><span class="sup"><?php echo $header_delivery_00_1; ?></span><?php echo $header_delivery_2; ?><span class="sup"><?php echo $header_delivery_00_2; ?></span></div>
     <div id="clock"><img src="catalog/view/theme/adefault/image/clock.jpg" alt="delivery times"/></div>
-    <div id="bottom_header_text" class="lightGreen">Thuisbezorgd binnen 30 min</div>
+    <div id="bottom_header_text" class="lightGreen"><?php echo $header_delivered_in; ?></div>
   </div>
 </div>
 <?php 

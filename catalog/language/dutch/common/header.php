@@ -8,7 +8,10 @@ $_['text_welcome']       = 'Welkom bezoeker, Wilt u <a href="%s">inloggen</a> of
 $_['text_logged']        = 'U bent ingelogd als <a href="%s">%s</a> <b>(</b> <a href="%s">Uitloggen</a> <b>)</b>';
 $_['text_account']       = 'Mijn Account';
 $_['text_checkout']      = 'Afrekenen';
-$_['header_delivery']      = 'Bezorgservice van 21:00 tot 06:00';
+$_['header_delivery_1']      = 'Bezorgservice van 21:';
+$_['header_delivery_2']      = ' tot 06:';
+$_['header_delivery_00_1']      = '00';
+$_['header_delivery_00_2']      = '00';
 $_['header_delivered_in'] = 'Thuisbezorgd binnen 30 min';
 $_['postcode_title']     = 'Vul de vier cijfers van uw postcode in om te kijken of we in uw regio bezorgen';
 $_['postcode_text']      = 'Jouw postcode';
