@@ -82,7 +82,7 @@ label {
 	float: left;
 	width: 178px;
 	border-right: 1px solid;
-	margin-top: 173px;
+	margin-top: 174px;
 	margin-bottom: 284px;
 	position:absolute; 
 	top:0; 
@@ -93,7 +93,7 @@ label {
 	float: right;
 	width: 177px;
 	border-left: 1px solid;
-	margin-top: 173px;
+	margin-top: 174px;
 	margin-bottom: 284px;
 	position:absolute; 
 	top: 0; 
@@ -119,6 +119,12 @@ label {
 }
 #column-right + #content {
 	margin-right: 195px;
+}
+#column-left .box-content {
+    padding: 0;
+}
+#column-left .box-category ul li a {
+    padding-left: 10px;
 }
 /* header */
 #header {
@@ -710,6 +716,9 @@ a.button:hover, input.button:hover {
     padding: 0 184px;
 }
 /* home page */
+#home-wrapper {
+	min-height: 560px;
+}
 #zipcode {
     float: left;
     width: 600px;
@@ -780,7 +789,10 @@ a.button:hover, input.button:hover {
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 18px;
-	color: #fff;
+	color: #000;
+	background: #aecae5;
+	margin-bottom: 6px;
+	border-bottom: 1px solid;
 }
 .box .box-content,#cart .content {
 	background: #FFFFFF;
@@ -856,13 +868,14 @@ a.button:hover, input.button:hover {
 }
 .box-category > ul > li {
 	padding: 8px 8px 8px 0px;
+	background: #2f2f2f;
 }
 .box-category > ul > li + li {
 	border-top: 1px solid #EEEEEE;
 }
 .box-category > ul > li > a {
 	text-decoration: none;
-	color: #333;
+	color: white;
 }
 .box-category > ul > li ul {
 	display: none;
