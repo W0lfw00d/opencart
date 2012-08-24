@@ -770,6 +770,47 @@ a.button:hover, input.button:hover {
     float: right;
     margin: -3px;
 }
+#facebook_login {
+    float: right;
+    width: 242px;
+    background: #3bb64c;
+    border: 1px solid;
+    margin-right: 38px;
+    padding-top:10px;
+    height: 550px;
+    text-align: center;
+}
+#facebook_login .box {
+
+  text-align: center;
+  width: 210px;
+  margin-left:16px;
+}
+#facebook_login .box,
+#facebook_login .box a,
+#facebook_login .box h2  {
+  color: white;
+}
+#facebook_login .box .box-content{
+  width: 200px;
+  border:0;
+  background: #3bb64c;
+}
+iframe{background:white;width:210px}
+#facebook_login div.right{
+    text-align: left;
+    width: 200px;
+}
+#facebook_login .content {
+  border:0;
+  padding-left:0;
+}
+#facebook_login input[type="text"], #facebook_login input[type="password"] {
+  width:182px;
+}
+#facebook_login input[type="submit"] {
+  color: black;
+}
 #car-banner {
     clear: both;
     width: 100%;

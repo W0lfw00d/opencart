@@ -4,8 +4,9 @@
 <div id="content">
 	<div id="home-wrapper">
 		<?php CheckPostcode(); ?>
-
-		<?php echo $column_right; ?>
+		<div id="facebook_login">
+			<?php echo $column_right; ?>
+		</div>
 		<?php echo $content_top; ?>
 	</div>
 </div>
