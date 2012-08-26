@@ -1,4 +1,4 @@
-<?php if(!isset($_GET['route']) || (isset($_GET['route']) && strpos($_GET['route'],'product')!==false))	{ 
+<?php if(!isset($_GET['route']) || (isset($_GET['route']) && (strpos($_GET['route'],'product')!==false || $_GET['route'] == 'common/home'))) {
 	if(isset($_GET['route']) && $_GET['route']!='common/home') { ?>
 		<div id="column-right">
 	<?php } ?>
@@ -7,7 +7,6 @@
 		  	<?php echo $module; ?>
 		  <?php } ?>
 		<?php } ?>
-	  
 	  <?php if(isset($_GET['route']) && $_GET['route']!='common/home') {
 	  	echo $cart;
 	  ?>
