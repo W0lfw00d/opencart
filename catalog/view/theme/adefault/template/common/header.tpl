@@ -48,7 +48,7 @@ DD_belatedPNG.fix('#logo img');
 <div id="container">
 <div id="header">
   <div id="logo">
-    <a href="<?php echo $home; ?>"><img src="catalog/view/theme/adefault/image/logo.jpg" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a>
+    <a href="index.php"><img src="catalog/view/theme/adefault/image/logo.jpg" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a>
   </div>
   <div id="ideal">
     <img src="catalog/view/theme/adefault/image/ideal.png" title="iDEAL" alt="ideal" />

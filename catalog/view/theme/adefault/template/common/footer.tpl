@@ -10,7 +10,7 @@
       <?php } ?>
     </ul>
   </div>
-  <div class="call-us">
+  <div class="<?php echo $call_us_class; ?>">
     <h1><?php echo $call_and; ?> <span class="lightGreen"><?php echo $drink; ?></span><?php echo $door; ?></h1>
     <p><?php echo $phone_number; ?></p>
   </div>

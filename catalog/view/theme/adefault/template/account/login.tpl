@@ -31,7 +31,7 @@
           <br />
           <br />
           <b><?php echo $entry_password; ?></b><br />
-          <input type="password" name="password" value="<?php echo $password; ?>" />
+          <input type="password" name="password" value="" />
           <br />
           <a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a><br />
           <br />

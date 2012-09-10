@@ -44,7 +44,11 @@
     </tfoot>
   </table>
 </div>
+<?php if ($this->cart->getSubtotal() >= 50) { ?>
 <div class="payment"><?php echo $payment; ?></div>
+<?php } else { ?>
+<div class="warning"><?php echo $warning_minimum_price; ?></div>
+<?php }  ?>
 <?php } else { ?>
 <script type="text/javascript"><!--
 location = '<?php echo $redirect; ?>';

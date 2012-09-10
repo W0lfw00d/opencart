@@ -2166,3 +2166,4 @@
 2012-08-22 8:34:26 - PHP Notice:  Undefined variable: menu_category in D:\xampp\htdocs\opencart\catalog\view\theme\adefault\template\common\header.tpl on line 79
 2012-08-22 8:34:26 - PHP Notice:  Undefined variable: menu_checkout in D:\xampp\htdocs\opencart\catalog\view\theme\adefault\template\common\header.tpl on line 80
 2012-08-23 13:19:13 - PHP Notice:  Undefined variable: action in D:\xampp\htdocs\opencart\catalog\view\theme\adefault\template\module\account.tpl on line 2
+2012-08-24 17:53:55 - PHP Notice:  Undefined variable: action in D:\xampp\htdocs\opencart\catalog\view\theme\adefault\template\module\account.tpl on line 2

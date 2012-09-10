@@ -29,11 +29,11 @@ function DisplayForm($postCode, $errors, $okMessage)
 						<?php }
 						else {	
 							if (isset($errors['postcode']) && $errors['postcode'] != ''){?>   	
-								<div class="error"><?= $errors['postcode'] ?> </div>
+								<div class="error" style="font-size:30px; font-weight:bold;"><?= $errors['postcode'] ?> </div>
 							<?php 	}
 							else { 
 								if ($okMessage != ''){	?>
-								<div class="name"><?= $okMessage ?> </div>
+								<div class="name" style="font-size:30px; font-weight:bold;"><?= $okMessage ?> </div>
 							<?php }
 							}
 						}?>  
@@ -65,7 +65,7 @@ function CheckPostcode(){
 
 	if ( isset($intPostcode) && $intPostcode >= 5600 && $intPostcode < 5800 ){	
 		$errors['postcode'] = '';
-		$okMessage = 'We bezorgen in uw regio. Uw postcode is '.$intPostcode.'. Klik op menu om te winkelen.';
+		$okMessage = $_SESSION['postcode_ok'];
 		$_SESSION['postcode_is_valid'] ='true';
 		DisplayForm($intPostcode, $errors,$okMessage);
 	}	
@@ -74,11 +74,11 @@ function CheckPostcode(){
 		$_SESSION['postcode_is_valid'] ='';
 		if ($showError=='true'){
 			if (strlen($intPostcode) < 4)
-				$errors['postcode'] = 'Postcode is te kort';
+				$errors['postcode'] = $_SESSION['postcode_error_to_short'];
 			else if (strlen($intPostcode) > 4)
-				$errors['postcode'] = 'Postcode is te lang';
+				$errors['postcode'] = $_SESSION['postcode_error_to_long'];
 			else 
-				$errors['postcode'] = 'Wij bieden geen ondersteuning op deze regio';
+				$errors['postcode'] = $_SESSION['postcode_error'];
 			DisplayForm($intPostcode, $errors,$okMessage);
 		}
 		else {

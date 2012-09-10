@@ -82,7 +82,7 @@ label {
 	float: left;
 	width: 178px;
 	border-right: 1px solid;
-	margin-top: 174px;
+	margin-top: 194px;
 	margin-bottom: 284px;
 	position:absolute; 
 	top:0; 
@@ -93,7 +93,7 @@ label {
 	float: right;
 	width: 177px;
 	border-left: 1px solid;
-	margin-top: 174px;
+	margin-top: 194px;
 	margin-bottom: 284px;
 	position:absolute; 
 	top: 0; 
@@ -128,7 +128,7 @@ label {
 }
 /* header */
 #header {
-	height: 105px;
+	height: 125px;
 /*	margin-bottom: 7px; */
 	padding-bottom: 4px;
 	position: relative;
@@ -147,7 +147,7 @@ label {
 }
 #header #logo {
 	position: absolute;
-	top: 0px;
+	top: 20px;
 	left: 30px;
 	clear: both;
 	float: left;
@@ -155,7 +155,7 @@ label {
 #language {
 	width: 140px;
 	position: absolute;
-	top: 5px;
+	top: 25px;
 	left: 910px;
 }
 #language .option {
@@ -325,7 +325,7 @@ label {
 }
 #ideal {
     position: absolute;
-    top: 25px;
+    top: 45px;
     left: 908px;
 }
 #header_text {
@@ -335,7 +335,7 @@ label {
     float: right;
     font-size: 24px;
     width: 560px;
-    top: 5px;
+    top: 25px;
     font-weight: bold;
     line-height: 38px;
 }
@@ -636,7 +636,7 @@ a.button, input.button {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	font-weight: bold;	
-	background: lightgrey;
+	background: #005d2b;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-khtml-border-radius: 5px;
@@ -655,7 +655,7 @@ input.button {
 	padding: 0px 12px 0px 12px;
 }
 a.button:hover, input.button:hover {
-	background: darkgrey;
+	background: #3bb64c;
 }
 .buttons {
 	background: #FFFFFF;
@@ -1782,26 +1782,7 @@ iframe{background:white;width:210px}
 }
 #footer .column ul li:hover {
         background-color: black;
-}
-#footer .call-us {
-		margin: 0px 74px;
-		text-align: right;
-		float: left;
-		margin-right: 3px;
-}
-#footer .call-us p {
-        color: #3db64d;
-        font-size: 24px;
-        font-weight:bold;
-        letter-spacing:2px;
-        margin-bottom: 5px;
-}
-#footer .call-us h1 {
-    margin-bottom: 5px;
-    margin-top: -8px;
-    font-weight: bold;
-    color: #0f6939;
-}
+}#footer .call-us {		margin: 0px 74px;		text-align: right;		float: left;		margin-right: 3px;}#footer .call-us-en {		margin: 0px 54px;		text-align: right;		float: left;		margin-right: 3px;}#footer .call-us p {        color: #3db64d;        font-size: 24px;        font-weight:bold;        letter-spacing:2px;        margin-bottom: 5px;}#footer .call-us-en p {        color: #3db64d;        font-size: 24px;        font-weight:bold;        letter-spacing:2px;        margin-bottom: 5px;}#footer .call-us h1 {    margin-bottom: 5px;    margin-top: -8px;    font-weight: bold;    color: #0f6939;}#footer .call-us-en h1 {    margin-bottom: 5px;    margin-top: -8px;    font-weight: bold;    color: #0f6939;}
 #no_alcohol {
     float: right;
     margin-right: 16px;
