@@ -56,7 +56,7 @@ DD_belatedPNG.fix('#logo img');
   <?php echo $language; ?>
   <div id="header_text">
     <div id="top_header_text" class="darkGreen"><?php echo $header_delivery_1; ?><span class="sup"><?php echo $header_delivery_00_1; ?></span><?php echo $header_delivery_2; ?><span class="sup"><?php echo $header_delivery_00_2; ?></span></div>
-    <div id="clock"><img src="catalog/view/theme/adefault/image/clock.jpg" alt="delivery times"/></div>
+    <div id="clock"><img width="120px" height="120px" src="catalog/view/theme/adefault/image/clock.jpg" alt="delivery times"/></div>
     <div id="bottom_header_text" class="lightGreen"><?php echo $header_delivered_in; ?></div>
   </div>
 </div>

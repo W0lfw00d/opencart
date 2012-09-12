@@ -111,13 +111,13 @@ label {
 	border:1px solid grey;
 	padding:5px;
 }
-#column-left + #column-right + #content, #column-left + #content {
+#column-left + #column-right + div.breadcrumb + #content, #column-left + div.breadcrumb + #content {
 	margin-left: 195px;
 	margin-top:0;
 	border:0;
 	padding:0;
 }
-#column-right + #content {
+#column-right + div.breadcrumb + #content {
 	margin-right: 195px;
 }
 #column-left .box-content {
@@ -340,9 +340,11 @@ label {
     line-height: 38px;
 }
 #clock {
-    float: right;
+    float: left;
     padding-right: 10px;
+    margin-top: -20px;
 }
+
 #header #top_header_text {
     color: #0f6939;
     float: right;
@@ -472,19 +474,19 @@ label {
 #menu > ul > li > div > ul > li > a {
 	color: #333;
 }
-#column-right + #content .breadcrumb {
-	color: #CCCCCC;
+#column-right + div.breadcrumb {
+	color: #000;
 	margin-bottom: 10px;
-	background: url('../image/topmenu.png') repeat-x;
-	line-height: 24px;
+	background: #AECAE5;
+	line-height: 23px;
 	padding: 5px;
-	vertical-align: middle;
-	display: table-cell;
-	width: 580px;
-	border-top: 1px solid transparent;
+	width: 605px;
+	margin-left: 183px;
+	border-bottom: 1px solid #000;
+	margin-top: 2px;
 }
-#column-right + #content .breadcrumb a {
-    color:white;
+#column-right + div.breadcrumb a {
+    color: #000;
 }
 .success, .warning, .attention, .information {
 	padding: 15px 10px 15px 33px;
